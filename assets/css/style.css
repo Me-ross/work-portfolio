@@ -1,0 +1,175 @@
+:root {
+    --Orange: #ff6600;
+    --Yellow: #f7cd46;
+    --Green: #99982f;
+    --Bkgrnd: #f7edda;
+}
+
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: var(--Green);
+}
+
+h1 {
+  text-align: left;
+  background-color: var(--Yellow);
+  color: var(--Orange);
+  width: 40%;
+  padding: 5px;
+}
+
+li {
+  margin: 10px;
+  display: inline;
+  list-style-type: none;
+  padding-bottom: 2px;
+  border-bottom-style: solid;
+}
+
+nav li {
+  border-color: var(--Bkgrnd);
+}
+
+nav ul {
+  text-align: right;
+  padding: 10px;
+  border-color: var(--Bkgrnd);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--Bkgrnd);
+}
+
+nav a:hover {
+  color: var(--Green);
+}
+
+nav li:hover {
+  background-color: var(--Bkgrnd);
+  border-color: var(--Bkgrnd);
+}
+
+.banner {
+  position: relative;
+  background-color: var(--Yellow);
+  height: 100px;
+}
+
+.banner img {
+  width: 90px;
+  height: 90px;
+  padding: 5px;
+}
+
+.banner p {
+  float: right;
+  margin: 40px 10% 0 0;
+  padding: 5px;
+  font-size: 32px;
+  font-weight: bold;
+  background-color: var(--Orange);
+  color: var(--Yellow);
+}
+/* about me starts here */
+
+main {
+  background-color: var(--Bkgrnd);
+  padding: 20px;
+}
+
+h2 {
+  margin-right: 10px;
+  padding: 5px;
+  text-align: right;
+  font-size: 32px;
+  color: var(--Orange);
+}
+
+.me-container {
+ display: flex;
+}
+
+.column1 {
+  flex-basis: 20%;
+  border-right-style: solid;
+  border-color: var(--Orange);
+}
+
+.column2-me {
+  flex-basis: 80%;
+  padding: 10px;
+  text-align: left;
+  color: var(--Orange);
+}
+
+p {
+  padding: 5px;
+}
+
+.work-container {
+  display: flex;
+  padding-top: 10px;
+}
+
+.column2-work {
+  flex-basis: 80%;
+  padding: 10px;
+}
+
+.image-container {
+display: flex;
+flex-direction: column;
+padding: 10px;
+}
+
+.row1 {
+  height: 60%;
+}
+
+.row2 {
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pic {
+  flex-basis: 50%;
+}
+
+img {
+  width: 100%;
+}
+
+.contact-container {
+  display: flex;
+  padding-top: 10px;
+}
+
+.column2-contact {
+  flex-basis: 80%;
+  padding-top: 25px;
+  
+}
+
+.contact-container ul{
+  color: var(--Orange);
+}
+
+.contact-container li:hover {
+  color: var(--Bkgrnd);
+  background-color: var(--Orange);
+}
+
+.contact-container a:hover {
+  color: var(--Bkgrnd);
+}
+.contact-container a {
+  text-decoration: none;
+  color: var(--Orange);
+} 

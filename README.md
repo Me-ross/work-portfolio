@@ -14,7 +14,7 @@ Create application showcasing your skills and talents for potentional employers
 
 Final application to resemble the following mock-up:
 
-![website with generic header, navitation bar, about me section, linked boxes that change color on hover,footer with contact links](./assets/images/02-advanced-css-homework-demo.gif)
+![website with generic header, navitation bar, about me section, linked boxes that change color on hover,footer with contact links](./assets/images/myportfolio_mockup.jpg)
 
 ## Requirements
 ---
