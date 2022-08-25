@@ -1,13 +1,13 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* website colors */
 :root {
     --Orange: #ff6600;
     --Yellow: #f7cd46;
     --Green: #99982f;
     --Bkgrnd: #f7edda;
-}
-
-* {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -23,6 +23,7 @@ h1 {
   padding: 5px;
 }
 
+/* set style for underline links in navigation */
 li {
   margin: 10px;
   display: inline;
@@ -46,6 +47,7 @@ nav a {
   color: var(--Bkgrnd);
 }
 
+/* Hovered navigation changes color of link and background */
 nav a:hover {
   color: var(--Green);
 }
@@ -54,6 +56,8 @@ nav li:hover {
   background-color: var(--Bkgrnd);
   border-color: var(--Bkgrnd);
 }
+
+/*header made up of 2 sections, navigation above and banner with avatar here */
 
 .banner {
   position: relative;
@@ -76,13 +80,14 @@ nav li:hover {
   background-color: var(--Orange);
   color: var(--Yellow);
 }
-/* about me starts here */
+
 
 main {
   background-color: var(--Bkgrnd);
   padding: 20px;
 }
 
+/* h2 styling used in 3 sections of About Me, Work and Contact Me */
 h2 {
   margin-right: 10px;
   padding: 5px;
@@ -91,10 +96,12 @@ h2 {
   color: var(--Orange);
 }
 
+/* About me Flex box with 2 boxes in a row */
 .me-container {
  display: flex;
 }
 
+/* this setting used for left side of About me, Work and Contact Me */
 .column1 {
   flex-basis: 20%;
   border-right-style: solid;
@@ -112,8 +119,10 @@ p {
   padding: 5px;
 }
 
+/* Work made up of 3 separate flex boxes. This is the larger area made up of two columns, work on the left and 5 images on the right */
 .work-container {
   display: flex;
+  gap: 5px;
   padding-top: 10px;
 }
 
@@ -122,16 +131,18 @@ p {
   padding: 10px;
 }
 
+/* Work Flex box #2 made up of larger image and 4 small image children */
 .image-container {
 display: flex;
 flex-direction: column;
-padding: 10px;
+gap: 5px;
 }
 
 .row1 {
   height: 60%;
 }
 
+/* Work Flex box #3 made up of 2 rows of 4 images */
 .row2 {
   height: 40%;
   display: flex;
@@ -143,9 +154,11 @@ padding: 10px;
 }
 
 img {
-  width: 100%;
+  width: 98%;
+  padding: 5px;
 }
 
+/* Contact made up of 2 separate Flex boxes. this first one has two columns one with Contact me and the other will uls */
 .contact-container {
   display: flex;
   padding-top: 10px;
@@ -153,14 +166,26 @@ img {
 
 .column2-contact {
   flex-basis: 80%;
-  padding-top: 25px;
-  
+  padding-top: 25px;  
 }
 
+/* Contact 2nd flex box made up of three same size boxes */
 .contact-container ul{
+  display: flex;
   color: var(--Orange);
 }
 
+/* set style of underline contact information */
+.contact-container li{
+  flex: 1;
+  text-align: center;
+  text-decoration-line: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+  border-bottom-style: none;
+}
+
+/* hover overing over the contact sections will change color */
 .contact-container li:hover {
   color: var(--Bkgrnd);
   background-color: var(--Orange);
@@ -173,3 +198,10 @@ img {
   text-decoration: none;
   color: var(--Orange);
 } 
+
+/* originally designed for desktop over 767px, max width 767px doesn't seem to cause problems. Possible corrections for mobile viewing */
+@media screen and (max-width 480px) {
+  .contact-container ul {
+    flex-direction: column;
+  }
+  }
