@@ -36,7 +36,7 @@ Final application to resemble the following mock-up:
 
 ## Final Submission
 ---
-1. Portfolio application is deployed and can be seen at: [Potfolio](https://me-ross.github.io/)
+1. Portfolio application is deployed and can be seen at: [Potfolio](https://me-ross.github.io/work-portfolio/)
 
 2. Repository for Portfolio can be found at: [GitHub](https://github.com/Me-ross/)
 

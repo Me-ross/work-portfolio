@@ -147,7 +147,7 @@ justify-content: center;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-size: 100% 100%;
+  background-size: cover;
   border-style: solid;
   border-color: var(--Orange);
 }
