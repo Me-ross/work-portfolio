@@ -32,17 +32,17 @@ li {
   border-bottom-style: solid;
 }
 
-nav li {
-  border-color: var(--Bkgrnd);
-}
-
 nav ul {
   text-align: right;
   padding: 10px;
   border-color: var(--Bkgrnd);
 }
 
-nav a {
+nav li {
+  border-color: var(--Bkgrnd);
+}
+
+a {
   text-decoration: none;
   color: var(--Bkgrnd);
 }
@@ -69,6 +69,7 @@ nav li:hover {
   width: 90px;
   height: 90px;
   padding: 5px;
+  border: none;
 }
 
 .banner p {
@@ -80,7 +81,6 @@ nav li:hover {
   background-color: var(--Orange);
   color: var(--Yellow);
 }
-
 
 main {
   background-color: var(--Bkgrnd);
@@ -119,7 +119,7 @@ p {
   padding: 5px;
 }
 
-/* Work made up of 3 separate flex boxes. This is the larger area made up of two columns, work on the left and 5 images on the right */
+/* Work made up of 2 separate flex boxes. This is the larger area made up of two columns, work on the left and 5 images on the right */
 .work-container {
   display: flex;
   gap: 5px;
@@ -134,28 +134,58 @@ p {
 /* Work Flex box #2 made up of larger image and 4 small image children */
 .image-container {
 display: flex;
-flex-direction: column;
-gap: 5px;
+flex-wrap: wrap;
+justify-content: center;
 }
 
-.row1 {
-  height: 60%;
-}
-
-/* Work Flex box #3 made up of 2 rows of 4 images */
-.row2 {
-  height: 40%;
+/* backgroud images for the work section */
+.card-image {
+  flex-basis: calc(50% - 4%); 
+  /* 50% less margin on both sides 1%+1% less border 1%+1%)*/
+  min-height: 200px;
+  margin: 1%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-size: 100% 100%;
+  border-style: solid;
+  border-color: var(--Orange);
 }
 
-.pic {
-  flex-basis: 50%;
+.card-image span {
+  background-color: var(--Bkgrnd);
+  color: var(--Orange);
+  padding: 10px;
+  margin-top: 40%;
 }
 
-img {
-  width: 98%;
-  padding: 5px;
+.card-image:first-child {
+  flex-basis: 100%;
+  min-height: 400px;
+}
+
+#img-horiseon {
+  background-image: url("../images/Horiseon-website.png");
+}
+
+#img-homepage {
+  background-image: url("../images/Home-Page.jpg");
+}
+#img-hello {
+  background-image: url("../images/hello.jpg");
+}
+
+#img-while {
+background-image: url("../images/beena-while.jpg");
+}
+
+#img-excited {
+  background-image: url("../images/excited-to-work.jpg");
+}
+
+/* hover over pictures and opacity reduces */
+.card-image:hover {
+  opacity: .6;
 }
 
 /* Contact made up of 2 separate Flex boxes. this first one has two columns one with Contact me and the other will uls */
