@@ -1,6 +1,7 @@
 * {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 /* website colors */
 :root {
@@ -60,7 +61,8 @@ nav li:hover {
 /*header made up of 2 sections, navigation above and banner with avatar here */
 
 .banner {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
   background-color: var(--Yellow);
   height: 100px;
 }
@@ -73,9 +75,9 @@ nav li:hover {
 }
 
 .banner p {
-  float: right;
-  margin: 40px 10% 0 0;
+  height: 45%;
   padding: 5px;
+  align-self: center;
   font-size: 32px;
   font-weight: bold;
   background-color: var(--Orange);
@@ -229,9 +231,31 @@ background-image: url("../images/beena-while.jpg");
   color: var(--Orange);
 } 
 
-/* originally designed for desktop over 767px, max width 767px doesn't seem to cause problems. Possible corrections for mobile viewing */
-@media screen and (max-width 480px) {
+/* originally designed for desktop over 767px, max width 767px doesn't seem to cause problems */
+
+/* Corrections for mobile max width 480px */
+
+@media screen and (max-width: 480px) {
+  header h1{
+    width: 100%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+  .me-container, .work-container, .contact-container {
+    flex-direction: column;
+  }
+
+  .column1 {
+    border-right-style: none;
+    border-bottom: 2px solid var(--Orange);
+  }
+
   .contact-container ul {
     flex-direction: column;
   }
-  }
+  
+
+
