@@ -166,7 +166,10 @@ justify-content: center;
   min-height: 400px;
 }
 
-#img-horiseon {
+#img-ceecees {
+  background-image: url("../images/CeeceesSalon.jpg");
+}
+#img-quickly {
   background-image: url("../images/Quickly-Main.jpg");
 }
 
