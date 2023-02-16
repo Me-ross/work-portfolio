@@ -173,10 +173,10 @@ justify-content: center;
   background-image: url("../images/Quickly-Main.jpg");
 }
 
-#img-homepage {
-  background-image: url("../images/Home-Page.jpg");
+#img-thanks {
+  background-image: url("../images/ThanksAMillion.jpg");
 }
-#img-hello {
+#img-horiseon {
   background-image: url("../images/Horiseon-website.png");
 }
 
@@ -184,8 +184,8 @@ justify-content: center;
 background-image: url("../images/beena-while.jpg");
 }
 
-#img-excited {
-  background-image: url("../images/excited-to-work.jpg");
+#img-ccReact {
+  background-image: url("../images/CCS-React.png");
 }
 
 /* hover over pictures and opacity reduces */
